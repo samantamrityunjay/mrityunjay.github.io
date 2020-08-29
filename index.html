@@ -1,21 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>
 		Mrityunjay's Site
 	</title>
+	<style type="text/css">
+
+		.title{
+			text-align: center;
+			font-family: "Open Sans",sans-serif;
+			font-size: 48px;
+			font-weight: bold;
+  		}
+  		.tilte-div{
+  			text-align: center;
+			font-family: "Open Sans",sans-serif;
+			font-size: 36px;
+	  		}
+  		
+  		.section{
+  			padding: 25px 25px 25px 25px;
+  			background-color: rgb(220,214,247);
+  		}
+  		.container{
+  			background-color: white;
+  			margin: 20px 10px 10px 20px;
+  			padding: 25px 25px 25px 25px;
+  			border-radius: 20px;
+  			font-family: "Open Sans",sans-serif;
+  			font-size: 20px;
+  		}
+
+		.nav-right{
+			float: right;
+		}	
+		img{
+			border-radius: 50%;
+		}
+		.main-content img { 
+			float: left; 
+			padding: 0 20px 20px 0;
+			
+		}
+		
+		}
+		footer{
+			font-size: 14px;
+			font-family: "Open Sans",sans-serif;
+			font-weight: bold;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
-<h1>Mrityunjay Samanta</h3>
+	<header>
+		<div>
+			<h1>Mrityunjay Samanta</h1>
+			<div class="nav-right">
+				<a href="#">About Me</a>
+				<a href="research.html">Research</a>
+				<a href="contact.html">Contact</a>
+			</div>
+	    </div>
+		
+	</header>
 
-<a href="https://www.facebook.com/iammrs32/" target="_blank">facebook</a>
-<a href="https://twitter.com/MrityunjaySama4" target="_blank">twitter</a>
-<h2>About Me</h2>
-<p>Intern at Algoanalytics<br>Integrated BS-MS student at IISER Pune (2016-2021)
- </p>
+	<script src="https://kit.fontawesome.com/3d043ddec0.js" crossorigin="anonymous"></script>	
+	<section id="aboutme">
+		<div >
+		<p>
+			<img src="me.jpg" alt="me" height="300">
+		
+		
+				
+					Hello there, I'm Mrityunjay.<br>
+					I am a final year undergraduate student at IISER Pune. I am currently working in Algoanlytics for my master thesis.<br>
+					During my time at IISER Pune, I have worked in both computational and experimental labs. I am looking forward for a career in Machine Learning using my knowledge in basic sciences.
+				<br>
+		    
+				<a href="https://www.facebook.com/iammrs32/" target="_blank">
+					<i class="fab fa-facebook fa-2x"></i>
+				</a>
+				<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+				<a href="https://twitter.com/MrityunjaySama4" target="_blank">
+					<i class="fab fa-twitter fa-2x"></i>
+				</a>
+				<a href=""><i class="fas fa-at fa-2x"></i></a>
+			</p>
+			
+		</div>
 
-<form>
-	<textarea cols="40" rows="10">Comments</textarea>
-</form>
+    </section>
+
+	<section id="research" class="section">
+		<h2 class="title">Research Projects</h2>
+		<div class="container">
+			<h3 class="tilte-div">Preparation and characterization of Thermoelectric material</h3>
+			<ul>
+				<li>Synthesized 6 layered thermoelectric material using solid state mechanisms in different external environments.</li>
+				<li>Validated material characteristics using  X-ray diffraction, scanning electron microscopy (FESEM), high temperature X-ray diffraction and TG/DSC.</li>
+				<li>Experimentally analyzed thermoelectric properties using LSR and LFA setups.</li>
+			</ul>
+		</div>
+		<div class="container">
+			<h3 class="tilte-div">Molecular Dynamics of charged polymer chains</h3>
+			<ul>
+				<li>
+					Studied single chain polyelectrolytes and charged co-block polymer chains using molecular dynamics simulations. 
+				</li>
+				<li>
+					Calculated sensitivity of physical and chemical properties of the polymer backbone (e.g. radius of gyration, end-to-end distance, ion condensation) to mechanical parameters like rigidity, dielectrics and salt concentration. 
+				</li>
+				<li>
+					Gained expertise in molecular dynamics simulation using software packages like LAMMPS and VMD.
+					
+				</li>
+			</ul>
+	    </div>
+		
+	</section>
+    
+	<div id="contact">
+		<h2 class="title">Contact</h2>
+		Name
+		<input type="text" name="name">
+		Email
+		<input type="text" name="email">
+		Message
+		<input type="text" name="message">
+		
+	</div>
+
+
+	<footer>
+		&copy; Copyright <script>document.write(new Date().getFullYear())</script>  Mrityunjay Samanta. All Rights Reserved
+	</footer>
+
+	
+
+		
+
 </body>
 </html>
