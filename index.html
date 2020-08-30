@@ -6,6 +6,10 @@
 		Mrityunjay's Site
 	</title>
 	<style type="text/css">
+		header{
+			font-family: "Open Sans",sans-serif;
+			font-size: 20px;
+		}
 
 		.title{
 			text-align: center;
@@ -18,6 +22,13 @@
 			font-family: "Open Sans",sans-serif;
 			font-size: 36px;
 	  		}
+
+	  	.aboutme{
+	  		margin: 20px 0px 20px 0px;
+	  		background-color: #f8f9fa;
+	  		font-family: "Open Sans",sans-serif;
+	  		font-size: 20px;
+	  	}
   		
   		.section{
   			padding: 25px 25px 25px 25px;
@@ -31,34 +42,40 @@
   			font-family: "Open Sans",sans-serif;
   			font-size: 20px;
   		}
+  		.container-color{
+  			background-color: rgb(220,214,247);
+  			margin: 20px 10px 10px 20px;
+  			padding: 25px 25px 25px 25px;
+  			border-radius: 20px;
+  			font-family: "Open Sans",sans-serif;
+  			font-size: 20px;
+  		}
 
 		.nav-right{
 			float: right;
 		}	
-		img{
+		.myimg{
 			border-radius: 50%;
-		}
-		.main-content img { 
-			float: left; 
-			padding: 0 20px 20px 0;
-			
+			float: left;
 		}
 		
-		}
-		footer{
+					
+		footer {
+			margin: 20px 0px 20px 0px
+			padding:10px 10px 10px 10px;
 			font-size: 14px;
 			font-family: "Open Sans",sans-serif;
 			font-weight: bold;
 			text-align: center;
 		}
+		
 	</style>
 </head>
 <body>
 	<header>
 		<div>
-			<h1>Mrityunjay Samanta</h1>
+			Mrityunjay Samanta
 			<div class="nav-right">
-				<a href="#">About Me</a>
 				<a href="research.html">Research</a>
 				<a href="contact.html">Contact</a>
 			</div>
@@ -67,15 +84,12 @@
 	</header>
 
 	<script src="https://kit.fontawesome.com/3d043ddec0.js" crossorigin="anonymous"></script>	
-	<section id="aboutme">
-		<div >
+	<section id="aboutme" class="aboutme">
+		<div>
 		<p>
-			<img src="me.jpg" alt="me" height="300">
-		
-		
-				
-					Hello there, I'm Mrityunjay.<br>
-					I am a final year undergraduate student at IISER Pune. I am currently working in Algoanlytics for my master thesis.<br>
+			<img src="me.jpg" alt="me" height="200" class="myimg">		
+				<p style="font-size:24px; font-weight: bold; text-align: center;">Hello there, I'm Mrityunjay.</p>
+					I am a final year undergraduate student at <a href="http://www.iiserpune.ac.in/" target="_blank">IISER Pune</a> majoring in physical sciences. I am currently working in <a href="https://algoanalytics.com/" target="_blank">Algoanlytics</a> for my master thesis.<br>
 					During my time at IISER Pune, I have worked in both computational and experimental labs. I am looking forward for a career in Machine Learning using my knowledge in basic sciences.
 				<br>
 		    
@@ -93,8 +107,17 @@
 
     </section>
 
+
+    <!-- START OF RESERACH PART-->
+
 	<section id="research" class="section">
 		<h2 class="title">Research Projects</h2>
+		<div class="container">
+			<h3 class="tilte-div">Introduction to DFT</h3>
+			<p>Studied theoretical aspects of Density Functional Theory.<br>
+               Used open source software Quantum Espresso to study the different properties like band structure, the density of states of Si, Cu, Al and few chalcogenides
+           </p>
+		</div>
 		<div class="container">
 			<h3 class="tilte-div">Preparation and characterization of Thermoelectric material</h3>
 			<ul>
@@ -120,17 +143,41 @@
 	    </div>
 		
 	</section>
-    
-	<div id="contact">
-		<h2 class="title">Contact</h2>
-		Name
-		<input type="text" name="name">
-		Email
-		<input type="text" name="email">
-		Message
-		<input type="text" name="message">
-		
-	</div>
+
+	<!-- END OF RESEARCH PART-->
+
+
+	<section>
+		<h2 class="title">Skills</h2>
+		<div class="container-color">
+			<h3>Computational</h3>
+			<table>
+				<tr>
+					<td><img src="c-programming.png" alt="C logo"> C</td>
+					<td><img src="python.png" alt="python logo">Python</td>
+				</tr>
+				<tr>
+					<td><img src="matlab-logo.png" alt="MATLAB logo">MATLAB</td>
+					<td><img src="java.png" alt="java logo">JAVA</td>
+				</tr>
+			</table>
+		</div>
+
+
+	</section>
+
+
+    <section>
+		<div id="contact">
+			<h2 class="title">Contact</h2>
+			Name
+			<input type="text" name="name">
+			Email
+			<input type="text" name="email">
+			Message
+			<input type="text" name="message">
+		</div>
+    </section>
 
 
 	<footer>
