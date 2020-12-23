@@ -1,294 +1,258 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<title>
 		Mrityunjay's Site
 	</title>
-	<style type="text/css">
-		header{
-			font-family: "Open Sans",sans-serif;
-			font-size: 20px;
-		}
-
-		.title{
-			text-align: center;
-			font-family: "Open Sans",sans-serif;
-			font-size: 48px;
-			font-weight: bold;
-			position: relative;
-  		}
-  		.title::after{
-  			content:' ';
-			  position: absolute;
-			  top:100%;
-			  left:50%;
-			  width:20%;
-			  border:4px solid rgb(252,191,30);
-			  border-radius:4px;
-			  /*box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);*/
-			  transform:translateX(-50%);*/
-  			
-  		}
-
-  		#skill-heading.title::after{
-  			width:5%;
-  		}
-
-  		#contact-heading.title::after{
-  			width: 8%;
-  		}
-  		.title-div{
-  			text-align: center;
-			font-family: "Open Sans",sans-serif;
-			font-size: 28px;
-	  		}
-
-	  	.aboutme{
-	  		margin: 20px 0px 20px 0px;
-	  		background-color: #f8f9fa;
-	  		font-family: "Open Sans",sans-serif;
-	  		font-size: 20px;
-	  	}
-  		
-  		.section{
-  			margin: 40px 0px 20px 0px;
-  			padding: 25px 25px 25px 25px;
-  			background-color: rgb(220,214,247);
-  			font-family: "Open Sans",sans-serif;
-  			font-size: 20px;
-
-  		}
-  		.container{
-  			background-color: white;
-  			margin: 20px 10px 10px 20px;
-  			padding: 25px 25px 25px 25px;
-  			border-radius: 20px;
-  			font-family: "Open Sans",sans-serif;
-  			font-size: 20px;
-  		}
-  		.container-color{
-  			background-color: rgb(220,214,247);
-  			margin: 20px 10px 10px 20px;
-  			padding: 25px 25px 25px 25px;
-  			border-radius: 20px;
-  			font-family: "Open Sans",sans-serif;
-  			font-size: 20px;
-  		}
-
-		.nav-right{
-			float: right;
-		}	
-		.myimg{
-			border-radius: 50%;
-			float: left;
-		}
-
-		.computational{
-			display: grid;
-			grid-template-columns:auto auto;
-		}
-		.languages{
-			display: grid;
-			grid-template-columns:auto auto;
-		}
-		.mdpackage{
-			display: grid;
-			grid-template-columns:auto auto;
-		}
-		.logo{
-			vertical-align: middle;
-			margin: 15px;
-		}
-		.skill-item{
-			text-align: center;
-		}
-		#vmd.skill-item{
-			transform: translateY(-7px);
-		}
-		.compute-title-div{
-			text-align: center;
-			font-family: "Open Sans",sans-serif;
-			font-size: 24px;
-			grid-column-start: 1;
-            grid-column-end: 3;
-		}
-
-		
-		input[type=text]{
-			width:100%;
-			padding: 12px 20px;
-			margin: 8px 0px;
-			display: inline-block;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			box-sizing: border-box;
-		}
-		textarea{
-			width:100%;
-			padding: 12px 20px;
-			margin: 8px 0px;
-			display: inline-block;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			box-sizing: border-box;
-			height: 125px;
-		}
-		#form-input{
-			display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 40px;  
-		}
-		
-		#submit.container-color{
-			text-align: center;
-		}
-
-		input[type=submit]{
-			font-family: "Open Sans",sans-serif;
-  			font-size: 20px;
-			display: inline-block;
-			width: 30%;
-			border-radius:4px;
-		}
-		
-					
-		footer {
-			margin: 20px 0px 20px 0px
-			padding:10px 10px 10px 10px;
-			font-size: 14px;
-			font-family: "Open Sans",sans-serif;
-			font-weight: bold;
-			text-align: center;
-		}
-		
-	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./Assets/css/style.css">
+	<script src="https://use.fontawesome.com/01cb485dd7.js"></script>
 </head>
 <body>
+
+	<!--######## HEADER ##########-->
 	<header>
-		<div>
-			Mrityunjay Samanta
-			<div class="nav-right">
-				<a href="research.html">Research</a>
-				<a href="contact.html">Contact</a>
+		<nav class="topnav" id="myTopNav">
+
+			<div class="logo">
+				<a href="#" class="active">Mrityunjay</a>
 			</div>
-	    </div>
+
+			<ul class="nav-links">
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Skills</a></li>
+				<li><a href="#">Impossible list</a></li>
+			</ul>
+
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+			
+		</nav>
+		
 		
 	</header>
 
-	<script src="https://kit.fontawesome.com/3d043ddec0.js" crossorigin="anonymous"></script>	
-	<section id="aboutme" class="aboutme">
-		<div>
-		<p>
-			<img src="me.JPG" alt="me" height="200" class="myimg">		
-				<p style="font-size:24px; font-weight: bold; text-align: center;">Hello there, I'm Mrityunjay.</p>
-					I am a final year undergraduate student at <a href="http://www.iiserpune.ac.in/" target="_blank">IISER Pune</a> majoring in physical sciences. I am currently working in <a href="https://algoanalytics.com/" target="_blank">Algoanlytics</a> for my master thesis.<br>
-					During my time at IISER Pune, I have worked in both computational and experimental labs. I am looking forward for a career in Machine Learning using my knowledge in basic sciences.
-				<br>
-		    
-				<a href="https://www.facebook.com/iammrs32/" target="_blank">
-					<i class="fab fa-facebook fa-2x"></i>
-				</a>
-				<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
-				<a href="https://twitter.com/MrityunjaySama4" target="_blank">
-					<i class="fab fa-twitter fa-2x"></i>
-				</a>
-				<a href=""><i class="fas fa-at fa-2x"></i></a>
+		
+	<section id="aboutme">
+		<div class="container">
+			<h1>Hello there, I'm</h1>
+			<h1>Mrityunjay Samanta</h1>
+
+			<div class="myimage">
+				<img src="/Assets/images/me.JPG" alt="Me">
+			</div>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, commodi ex molestiae dignissimos repellendus ad? Ea assumenda nobis iste id perspiciatis doloremque quam! Exercitationem et eaque officia provident? Distinctio, necessitatibus.
 			</p>
-			
+			<div class="social-contact">
+				<div class="social-button">
+					<div class="social-icon"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></div>
+					<span>LinkedIn</span>
+				</div>
+				<div class="social-button">
+					<div class="social-icon"><i class="fa fa-github fa-2x" aria-hidden="true"></i></div>
+					<span>GitHub</span>
+				</div>
+			</div>
 		</div>
 
-    </section>
-
-
-    <!-- START OF RESERACH PART-->
-
-	<section id="research" class="section">
-		<h2 class="title" id="research-heading">Research Projects</h2>
-		<div class="container">
-			<h3 class="title-div">Introduction to DFT</h3>
-			<p>Studied theoretical aspects of Density Functional Theory.<br>
-               Used open source software Quantum Espresso to study the different properties like band structure, the density of states of Si, Cu, Al and few chalcogenides
-           </p>
-		</div>
-		<div class="container">
-			<h3 class="title-div">Preparation and characterization of Thermoelectric material</h3>
-			<ul>
-				<li>Synthesized 6 layered thermoelectric material using solid state mechanisms in different external environments.</li>
-				<li>Validated material characteristics using  X-ray diffraction, scanning electron microscopy (FESEM), high temperature X-ray diffraction and TG/DSC.</li>
-				<li>Experimentally analyzed thermoelectric properties using LSR and LFA setups.</li>
-			</ul>
-		</div>
-		<div class="container">
-			<h3 class="title-div">Molecular Dynamics of charged polymer chains</h3>
-			<ul>
-				<li>
-					Studied single chain polyelectrolytes and charged co-block polymer chains using molecular dynamics simulations. 
-				</li>
-				<li>
-					Calculated sensitivity of physical and chemical properties of the polymer backbone (e.g. radius of gyration, end-to-end distance, ion condensation) to mechanical parameters like rigidity, dielectrics and salt concentration. 
-				</li>
-				<li>
-					Gained expertise in molecular dynamics simulation using software packages like LAMMPS and VMD.
-					
-				</li>
-			</ul>
-	    </div>
 		
 	</section>
 
-	<!-- END OF RESEARCH PART-->
 
 
-	<section>
-		<h2 class="title" id="skill-heading">Skills</h2>
-		<div class="container-color">
-			<h3 class="title-div">Computational</h3>
-			<div class="computational">				
-				<div class="languages">
-					<h3 class="compute-title-div">Programming languages</h3>
-					<div class="skill-item"><img src="c-programming.png" alt="C logo" class="logo"> C</div>
-					<div class="skill-item"><img src="python.png" alt="python logo" class="logo">Python</div>
-					<div class="skill-item"><img src="matlab-logo.png" alt="MATLAB logo" class="logo">MATLAB</div>
-					<div class="skill-item"><img src="java.png" alt="java logo" class="logo">JAVA</div>
-		    	</div>		    	
-		    	<div class="mdpackage">
-		    		<h3 class="compute-title-div">MD Packages</h3>
-		    		<div class="skill-item"><img src="lammps-logo.gif" class="logo"> LAMMPS</div>
-		    		<div class="skill-item" id="vmd"><img src="vmd-logo.png" class="logo"> VMD</div>
-		    	</div>
-		    </div>
-	    </div>
-   </section>
+	<section id='Research Projects'>
+		<div>
+			<h2>Research Project</h2>
+			<div class='all-project'>
+
+				<div class="project">
+
+					<div class="project-image">
+						<img src="/Assets/images/DOS.png">
+					</div>
+
+					<div class="project-header">
+						<h3>Introduction to DFT</h3>
+					</div>
+							
+					<div class="project-body">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia obcaecati nulla necessitatibus assumenda sequi vitae, quod quos dolorem possimus.					
+						</p>
+						<button>Read More..</button>
+					</div>
+				</div>
 
 
-    <section class="section">
-		<h2 class="title" id="contact-heading">Contact</h2>
-		
-			<form class="contact-form">
-				<div class="container-color" id="form-input">
-					<div class="form-input">
-						<div class="form-input-name">
-							<label for="name">Name</label>
-							<input type="text" name="name">
+				<div class="project">
+
+					<div class="project-image">
+						<img src="/Assets/images/xrd.png">
+					</div>
+
+					<div class="project-header">
+						<h3>Thermoelectric Materials</h3>
+					</div>
+							
+					<div class="project-body">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia obcaecati nulla necessitatibus assumenda sequi vitae, quod quos dolorem possimus.					
+						</p>
+						<button>Read More..</button>
+					</div>
+				</div>
+
+
+				<div class="project">
+
+					<div class="project-image">
+						<img src="/Assets/images/md.jpg">
+					</div>
+
+					<div class="project-header">
+						<h3>Molecular Dynamics</h3>
+					</div>
+							
+					<div class="project-body">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia obcaecati nulla necessitatibus assumenda sequi vitae, quod quos dolorem possimus.					
+						</p>
+						<button>Read More..</button>
+					</div>
+				</div>
+
+				
+				
+			</div>
+		</div>
+
+
+	</section>
+
+
+
+	<!-- My skills section -->
+
+	<section id='MySkills'>
+		<div>
+			<h2>My Skills</h2>
+			<div>
+				<h3>Programming/Computational</h3>
+				<div class="all-skills">
+
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/python.png">
 						</div>
-						<div class="form-input-email">
-							<label for="email">Email</label>
-							<input type="text" name="email">
+						<div class="skill-title">
+							<h3>Python</h3>
 						</div>
 					</div>
-					<div class="form-input">
-						<label for="message">Message</label>
-						<textarea name="message"></textarea>
-				    </div>
-				</div>
-			    <div class="container-color" id="submit">
-					<input type="submit">
-                </div>
-			</form>
-		
-    </section>
 
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/matlab-logo.png">
+						</div>
+						<div class="skill-title">
+							<h3>MATLAB</h3>
+						</div>
+					</div>
+
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/c-programming.png">
+						</div>
+						<div class="skill-title">
+							<h3>C language</h3>
+						</div>
+					</div>
+
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/java.png">
+						</div>
+						<div class="skill-title">
+							<h3>Java</h3>
+						</div>
+					</div>
+
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/MySQL.png">
+						</div>
+						<div class="skill-title">
+							<h3>MySQL</h3>
+						</div>
+					</div>
+
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/lammps-logo.gif">
+						</div>
+						<div class="skill-title">
+							<h3>LAMMPS MD package</h3>
+						</div>
+					</div>
+
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/vmd-logo.png">
+						</div>
+						<div class="skill-title">
+							<h3>VMD visulization program</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div>
+				<h3>Experimental skills</h3>
+				<div class="all-skills">
+
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/python.png">
+						</div>
+						<div class="skill-title">
+							<h3>TG/DSC</h3>
+						</div>
+					</div>
+
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/matlab-logo.png">
+						</div>
+						<div class="skill-title">
+							<h3>Crystal XRD</h3>
+						</div>
+					</div>
+
+					<div class="skill">
+						<div class="skill-image">
+							<img src="/Assets/images/c-programming.png">
+						</div>
+						<div class="skill-title">
+							<h3>FESEM</h3>
+						</div>
+					</div>
+
+								
+				</div>
+			</div>
+		</div>
+	</section>
+ 
+
+
+
+    
 
 	<footer>
 		&copy; Copyright <script>document.write(new Date().getFullYear())</script>  Mrityunjay Samanta. All Rights Reserved
@@ -296,7 +260,7 @@
 
 	
 
-		
+	<script src="./Assets/js/app.js"></script>	
 
 </body>
 </html>
