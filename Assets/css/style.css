@@ -313,6 +313,77 @@ nav{
 .expt-skill ul{
     list-style-position: inside;
 }
+
+.slid{
+    overflow: hidden;
+}
+
+.slide-container{
+    width:500%;
+    height:300px;
+    display: flex;
+}
+.slide-container input{
+    display:none;
+}
+.skill-slider{
+    width:20%;
+    transition: 2s;
+}
+.slide-navigation-manual{
+    position:absolute;
+    width:1200px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+}
+.manual{
+    border: 2px solid #0a66c2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.manual:not(:last-child){
+    margin-right: 10px;
+}
+.manual:hover{
+    background: #0a66c2;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;    
+}
+#radio2:checked ~ .first{
+    margin-left: -20%
+}
+.slide-navigation-auto{
+    position:absolute;
+    display: flex;
+    width:1200px;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+.slide-navigation-auto div{
+    border: 2px solid #0a66c2;
+    padding:5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.slide-navigation-auto div:not(:last-child){
+    margin-right:10px;
+}
+
+#radio1:checked ~ .slide-navigation-auto .auto-btn-slide1{
+    background: #0a66c2;
+
+}
+#radio2:checked ~ .slide-navigation-auto .auto-btn-slide2{
+    background: #0a66c2;
+    
+}
 /* @media screen and (max-width:990px){
     .all-skills{
         grid-template-columns: repeat(2,1fr);
