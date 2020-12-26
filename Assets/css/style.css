@@ -130,6 +130,9 @@ nav{
     padding-left: 10rem;
     padding-right: 10rem;
 }
+.container p a{
+    color: inherit;
+}
 
 .social-contact .social-button{
     display:inline-block;
@@ -183,6 +186,10 @@ nav{
 }
 .social-contact .social-button:nth-child(2):hover span{
     color:#333;
+}
+.social-contact .social-button a{
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -276,6 +283,33 @@ nav{
    }
 }
 
+
+.section-title{
+    position: relative;
+    margin: 2rem;  
+    text-align: center;
+}
+.section-title::before{
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: 40%;
+    background-color: black;
+    height: 3px;
+    width: 20%
+
+}
+.section-title::after{
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: 40%;
+    background-color: black;
+    height: 3px;
+    width: 20%;
+    
+
+}
 /* skills section */
 
 .all-skills{
