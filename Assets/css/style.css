@@ -336,6 +336,9 @@ html{
 .srabanti-paper{
     font-size: 15px;
 }
+.srabanti-paper a {
+    color: inherit;
+}
 .project-about{
     backface-visibility: hidden;
     grid-area: 1 / 1;
