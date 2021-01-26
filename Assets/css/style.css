@@ -231,6 +231,52 @@ html{
     }
 }
 
+#updates{
+    padding-top:3rem;
+}
+
+.timeline{
+    margin: 90px auto;
+    width: 360px;
+    border-left: 2px solid;
+    padding: 0 10px 0 30px;
+          
+}
+.timeline .time{
+    position: relative;
+    padding: 10px 15px;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+.timeline .time:before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    border: 3px solid;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+.timeline .time::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #000 transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+    
+}
+.timeline .time span{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 
 /* Research section */
 .diffsection{
