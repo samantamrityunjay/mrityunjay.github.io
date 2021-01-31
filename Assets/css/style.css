@@ -580,16 +580,21 @@ html{
 }
 .ml-project-code{
     float: left;
-    height: 44px;
-    width: 45px;
-    border-radius: 50px;
-    background: #000;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: #333;
     box-sizing: border-box;
-    line-height: 55px;
+    line-height: 33px;
     margin: auto;
+    transition: 0.3s;
+}
+.ml-project-code:hover{
+    background: #000;
+    cursor: pointer;
 }
 .ml-project-code i{
-    line-height: 45px;
+    line-height: 25px;
     color: #fff;
 }
 .ml-project-ref{
@@ -600,11 +605,28 @@ html{
 }
    
 .ml-project-tools{
-    display: block;       
+    display: flex;   
+    justify-content: center;    
+}
+.ml-project-tools div{
+    margin-right: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+    display: flex;   
+    font-size: 14px;  
 }
 .ml-project-tools img{
     margin: 10px;
-    height: 30px;
+    height: 25px;
+    filter: grayscale(80%);
+    transition: 0.3s;
+    position: relative;
+}
+.ml-project-tools img:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+
 }
 
 
