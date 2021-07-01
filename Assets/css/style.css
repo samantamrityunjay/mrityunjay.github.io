@@ -574,6 +574,9 @@ html{
     text-align: center;
     margin: 5px 0 5px 0;
 }
+.project-where a{
+    color: inherit;
+}
 
 .project-content{
     display: flex;
@@ -751,99 +754,6 @@ html{
 
 
 
-/* Research section
-.diffsection{
-    padding-top: 3rem;
-    margin-top:3rem;
-    margin-bottom:3rem;
-}
-.all-project{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;   
-}
-.project-container{
-    margin: 1rem;
-    perspective: 1000px; 
-
-}
-.project{
-    display:grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    text-align: center;
-    border-radius: 10px;
-    padding: 5px; 
-    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
-    transform-style:preserve-3d;
-    transition: all 1s ease;
-    
-}
-.project-image img{
-    
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    
-}
-
-.project-body-header{
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
-}
-
-.project-work{
-    text-align:left;
-    line-height: 1.5rem;
-}
-.project-work ul{
-    padding:8px;
-    list-style-position: inside;
-}
-.project-work ul li{
-    margin-top: 1rem;
-}
-.srabanti-paper{
-    font-size: 15px;
-}
-.srabanti-paper a {
-    color: inherit;
-}
-.project-about{
-    backface-visibility: hidden;
-    grid-area: 1 / 1;
-    
-    
-}
-.project-body {
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    position:absolute;
-    backface-visibility: hidden;
-    grid-area: 1 / 1;
-    transform: rotateY(180deg);
-}
-.project-container:hover .project{
-    transform: rotateY(180deg);
-}
-
-
-@media screen and (max-width:990px){
-    .all-project{
-        grid-template-columns: repeat(2,1fr);
-        padding: 2rem 50px;
-    }
-}
-@media screen and (max-width:650px){
-    .all-project{
-        grid-template-columns: 1fr;
-   }
-} */
-
-
 .section-title{
     position: relative;
     margin: 2rem;  
@@ -870,133 +780,7 @@ html{
     
 
 }
-/* skills section */
 
-.all-skills{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    align-items: center;
-}
-.skill{
-    margin: 40px;
-    align-items: center;
-    text-align: center;
-}
-
-.skill-image img{
-    height: 50px;
-    width: auto;        
-} 
-.skill-title{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-.expt-skill{
-    height: 50px;
-    /* width: 180px; */
-    text-align: justify;
-    /* padding:1rem; */
-}
-.expt-skill ul{
-    list-style-position: inside;
-}
-
-.slid{
-    overflow: hidden;
-}
-
-.slide-container{
-    position: relative;
-    width:500%;
-    max-height: max-content;
-    display: flex;
-}
-.slide-container input{
-    /* position: absolute;
-    bottom: 20px;
-    left: 600px; */
-    display:none;
-}
-.skill-slider{
-    width:20%;
-    transition: 2s;
-}
-.skill-slider h3{
-    text-align: center;
-}
- .slide-navigation-manual{
-    position:absolute;
-    /* width:1300px; */
-    /* margin-top: 100px;   */
-    display: flex;
-    justify-content: center; 
-    bottom: 20px;
-    left: 10%;
-}
-.manual{
-    border: 2px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-
-}
-.manual:not(:last-child){
-    margin-right: 10px;
-}
-.manual:hover{
-    background: black;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;    
-}
-#radio2:checked ~ .first{
-    margin-left: -20%
-}
-.slide-navigation-auto{
-    
-    position:absolute;
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* margin-top: 400px;
-    width:1300px; */
-    bottom: 20px;
-    left: 10%;
-    
-
-}
-.slide-navigation-auto div{
-    border: 2px solid black;
-    padding:5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-.slide-navigation-auto div:not(:last-child){
-    margin-right:10px;
-}
-
-#radio1:checked ~ .slide-navigation-auto .auto-btn-slide1{
-    background: black;
-
-}
-#radio2:checked ~ .slide-navigation-auto .auto-btn-slide2{
-    background:black;
-    
-}
-/* @media screen and (max-width:990px){
-    .all-skills{
-        grid-template-columns: repeat(2,1fr);
-        padding: 2rem 50px;
-    }
-}
-@media screen and (max-width:650px){
-    .all-skills{
-        grid-template-columns: 1fr;
-   }
-} */
 
 footer {
     margin-top: 2rem;
